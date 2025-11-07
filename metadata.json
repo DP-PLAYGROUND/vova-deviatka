@@ -1,0 +1,5 @@
+{
+  "name": "Vova Deviatka",
+  "description": "A Traffic Racer style game where you control a car, avoid police, and collect cakes to score points. Use arrow keys or swipe to change lanes.",
+  "requestFramePermissions": []
+}
