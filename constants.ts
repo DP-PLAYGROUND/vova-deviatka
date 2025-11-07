@@ -1,6 +1,6 @@
 
-export const INITIAL_LIVES = 3;
-export const WIN_SCORE = 3;
+export const INITIAL_LIVES = 9;
+export const WIN_SCORE = 30;
 export const LANES = 3;
 export const GAME_SPEED_START = 4;
 export const ROAD_LINE_SPEED = 8;

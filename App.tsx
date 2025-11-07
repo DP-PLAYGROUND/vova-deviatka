@@ -83,7 +83,7 @@ const GameObjectDisplay = React.memo(({object, gameWidth}: { object: GameObject;
         <div className="absolute w-16 h-20" style={style}>
             {object.type === 'police'
                 ? <img src={PoliceIcon} alt="Police" className="w-full h-full object-contain rounded-lg"/>
-                : <img src={CakeIcon} alt="Collectible" className="w-full h-full object-contain rounded-lg"/>}
+                : <img src={CakeIcon} alt="Collectible" className="w-full h-full object-contain rounded-lg rotate-infinite"/>}
         </div>
     );
 });
@@ -345,9 +345,9 @@ function App() {
                  className="relative w-full max-w-md h-[80vh] max-h-[900px] bg-slate-700 overflow-hidden shadow-2xl border-8 border-slate-900">
                 {status !== 'playing' && (
                     <Modal
-                        title={status === 'start' ? "" : (status === 'gameOver' ? "Game Over" : "You Win!")}
-                        message={status === 'start' ? "Не має значення, що ти стоїш біля тачки і вона твоя. Важливо інше: як ти на ній їздиш! Запам'ятай це!" : (status === 'gameOver' ? `Your final score: ${score}` : "Congratulations! You are a true racer.")}
-                        buttonText={status === 'start' ? "Поїхали" : "Play Again"}
+                        title={status === 'start' ? "" : (status === 'gameOver' ? "Пу-пу-пу" : "Сім'я вітає!")}
+                        message={status === 'start' ? "Не має значення, що ти стоїш біля тачки і вона твоя. Важливо інше: як ти на ній їздиш! Запам'ятай це! 🔥" : (status === 'gameOver' ? `Збери 30 тортиків, якщо не лох. 🤨` : "Лохи йдуть пішки. Ти їдеш з 30 тортиками. 🎂")}
+                        buttonText={status === 'gameOver' ? "Я не лох!" : "Поїхали"}
                         onButtonClick={resetGame}
                         imageUrl={getModalImageUrl()}
                     />
